@@ -235,6 +235,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\FootstepsController.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\AudioRandomController.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\AudioRandomControllerLPF.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\Axe.cs" />
@@ -302,6 +303,7 @@
     <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+    <Compile Include="Assets\RestartLevel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />

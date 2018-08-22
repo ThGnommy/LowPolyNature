@@ -10,12 +10,13 @@ namespace Audio.RandomControllerLPF
     public class AudioRandomControllerLPF : MonoBehaviour
     {
         AudioSource emitter;
-        AudioLowPassFilter lp;
+        public float minVol = 0.7f;
+        public float maxVol = 1;
         public AudioClip[] sounds;
         public float minPitch = 0.9f;
         public float maxPitch = 1.1f;
-        float maxFreq = 22000;
-        float minFreq = 18000;
+        float maxFreq = 20000;
+        float minFreq = 17500;
         public bool retriggerPrevention = true;
 
         // Use this for initialization
@@ -35,6 +36,8 @@ namespace Audio.RandomControllerLPF
             float pitch = Random.Range(minPitch, maxPitch);
             emitter.pitch = pitch;
             GetComponent<AudioLowPassFilter>().cutoffFrequency = Random.Range(minFreq, maxFreq);
+            float volume = Random.Range(minVol, maxVol);
+            emitter.volume = volume;
             int n = Random.Range(1, sounds.Length);
             emitter.clip = sounds[n];
             emitter.PlayOneShot(emitter.clip);

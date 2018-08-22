@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using Audio.RandomControllerLPF;
 using Audio.RandomController;
-using LPF.Randomizer;
 
 public class PlayerController : MonoBehaviour
 {
@@ -46,14 +44,12 @@ public class PlayerController : MonoBehaviour
 
     #endregion
 
-    public AudioRandomController f_GrassSoundController;
-    public AudioRandomController f_SandSoundController;
+
     public AudioRandomController JumpSoundController;
     public AudioRandomController LandSoundController;
     public AudioRandomController DeathSoundController;
     public AudioRandomController AttackSoundController;
-    public AudioRandomControllerLPF PickupSoundController;
-    public LowPassRandomizer lpr;
+    public AudioRandomController PickupSoundController;
 
 
 
@@ -266,10 +262,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.X))
-        {
-            AudioRandomControllerLPF.Trigger(PickupSoundController);
-        }
 
         if (!IsDead)
         {
