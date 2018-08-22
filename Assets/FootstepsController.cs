@@ -11,7 +11,7 @@ public class FootstepsController : MonoBehaviour {
     public AudioRandomControllerLPF FR_Sand;
     BoxCollider boxCollider;
     RaycastHit hit;
-    public float maxDistance = 200;
+    public float maxDistance = 20;
 	
 	// Update is called once per frame
 	void Update () {
