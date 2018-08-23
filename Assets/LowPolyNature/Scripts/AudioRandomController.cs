@@ -12,7 +12,8 @@ namespace Audio.RandomController
         public AudioClip[] sounds;
         public float minPitch = 0.9f;
         public float maxPitch = 1.1f;
-
+        public float minVol = 0.7f;
+        public float maxVol = 1;
         public bool retriggerPrevention = true;
 
         // Use this for initialization
@@ -31,6 +32,8 @@ namespace Audio.RandomController
         {
             float pitch = Random.Range(minPitch, maxPitch);
             emitter.pitch = pitch;
+            float volume = Random.Range(minVol, maxVol);
+            emitter.volume = volume;
             int n = Random.Range(1, sounds.Length);
             emitter.clip = sounds[n];
             emitter.PlayOneShot(emitter.clip);

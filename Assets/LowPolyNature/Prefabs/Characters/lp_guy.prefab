@@ -1829,7 +1829,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 867e33dcfcbcbc8459be0757b0f29bf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  minVol: 0.7
+  maxVol: 1
+  sounds:
+  - {fileID: 8300000, guid: 6ba01d762e04e3c46a87a67c8e4bc16d, type: 3}
+  - {fileID: 8300000, guid: f37eb39ba01fcd54b9f727cf0bfd1490, type: 3}
+  - {fileID: 8300000, guid: f5556e69af5f57b4a8e22c239998f7e1, type: 3}
+  - {fileID: 8300000, guid: 13fd3e4148fdb84468f6284dc1a85323, type: 3}
+  - {fileID: 8300000, guid: 264db4d2bb4b92f438ac6a4672538d97, type: 3}
   minPitch: 0.9
   maxPitch: 1.1
   retriggerPrevention: 1
@@ -1846,8 +1853,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FL_Grass: {fileID: 114567185882036736}
   FR_Grass: {fileID: 114559486843297274}
-  FL_Sand: {fileID: 0}
-  FR_Sand: {fileID: 0}
+  FL_Sand: {fileID: 114882200170211026}
+  FR_Sand: {fileID: 114029599759972250}
   maxDistance: 100
 --- !u!114 &114559486843297274
 MonoBehaviour:
@@ -1860,6 +1867,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 867e33dcfcbcbc8459be0757b0f29bf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minVol: 0.7
+  maxVol: 1
   sounds:
   - {fileID: 8300000, guid: 4aefc5fcc1ea87345b10c0711532ad4b, type: 3}
   - {fileID: 8300000, guid: d15b2120609f6774984c3df9731d3d4a, type: 3}
@@ -1880,6 +1889,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 867e33dcfcbcbc8459be0757b0f29bf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minVol: 0.7
+  maxVol: 1
   sounds:
   - {fileID: 8300000, guid: 4c4777e159f247a4b93dc77bbb1735ab, type: 3}
   - {fileID: 8300000, guid: 0a04f76a41bd4cb42b7e6f523eb3f7d5, type: 3}
@@ -1925,11 +1936,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 867e33dcfcbcbc8459be0757b0f29bf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minVol: 0.7
+  maxVol: 1
   sounds:
-  - {fileID: 8300000, guid: 599fc5d1ba3595149a48e0ed76087193, type: 3}
-  - {fileID: 8300000, guid: 31e5302f2b123d442897ab239aad827b, type: 3}
-  - {fileID: 8300000, guid: 975bf38e677b39143baa7cb26f124f41, type: 3}
-  - {fileID: 8300000, guid: 6612cdc55f339694f9e541d2d440815a, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   minPitch: 0.9
   maxPitch: 1.1
   retriggerPrevention: 1
@@ -1944,7 +1957,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 867e33dcfcbcbc8459be0757b0f29bf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  minVol: 0.7
+  maxVol: 1
+  sounds:
+  - {fileID: 8300000, guid: ea1b0b64cc0629c4da2369bd2d16db34, type: 3}
+  - {fileID: 8300000, guid: 89572edb5338da5498cbf7edbea77cf6, type: 3}
+  - {fileID: 8300000, guid: 757fef77ee484d04f92898153043ef3d, type: 3}
+  - {fileID: 8300000, guid: e363bfd6788ba5f4881945fe05e9ceef, type: 3}
+  - {fileID: 8300000, guid: 6d3fbf134a6e3df48b964b18b1aed4d0, type: 3}
   minPitch: 0.9
   maxPitch: 1.1
   retriggerPrevention: 1
