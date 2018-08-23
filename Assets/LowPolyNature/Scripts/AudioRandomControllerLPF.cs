@@ -51,7 +51,6 @@ namespace Audio.RandomControllerLPF
 
         public static void Trigger(AudioRandomControllerLPF src)
         {
-            Debug.Log("The Trigger Was Triggered");
             if (src != null)
             {
                 src.PlayRandomSound();

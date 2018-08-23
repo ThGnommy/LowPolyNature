@@ -235,14 +235,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\FootstepsController.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\AudioRandomController.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\AudioRandomControllerLPF.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\Axe.cs" />
+    <Compile Include="Assets\LowPolyNature\Scripts\CameraDistance.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\Crate.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\DamageSource.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\FirstAid.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\Food.cs" />
+    <Compile Include="Assets\LowPolyNature\Scripts\FootstepsController.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\GameManager.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\Gem.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\HealthBar.cs" />
@@ -257,6 +258,7 @@
     <Compile Include="Assets\LowPolyNature\Scripts\LowPassRandomizer.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\PlayerController.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\PlayerFollow.cs" />
+    <Compile Include="Assets\LowPolyNature\Scripts\RestartLevel.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\Sheep.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
@@ -303,7 +305,6 @@
     <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
-    <Compile Include="Assets\RestartLevel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
