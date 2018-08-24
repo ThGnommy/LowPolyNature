@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class HealthBar : MonoBehaviour {
 
@@ -16,6 +17,16 @@ public class HealthBar : MonoBehaviour {
     private int mCurrentValue;
 
     private float mCurrentPercent;
+
+    // Audio public
+
+    public AudioClip Clip1;
+    public AudioClip Clip2;
+    public AudioSource s_StartMusic;
+    public AudioSource s_HalfFood;
+
+    public AudioMixerSnapshot StartMusicSnap;
+    public AudioMixerSnapshot HalfFoodSnap;
     
     public void SetValue(int health)
     {
@@ -49,8 +60,32 @@ public class HealthBar : MonoBehaviour {
     }
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
 
-	}
+    }
+
+    private void FixedUpdate()
+    {
+        if(CurrentValue > 50)
+        {
+            StartMusicSnap.TransitionTo(3);
+
+            if (!s_StartMusic.isPlaying)
+            {
+                s_StartMusic.PlayOneShot(Clip1);
+                s_HalfFood.PlayOneShot(Clip2);
+                print("100");
+            }
+
+        }
+
+        if(CurrentValue < 50)
+        {
+            HalfFoodSnap.TransitionTo(3);
+            print("50");
+        }
+
+    }
 
 }

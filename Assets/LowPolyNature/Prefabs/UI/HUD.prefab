@@ -981,7 +981,7 @@ Animator:
   m_GameObject: {fileID: 1082875561703164}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 957712027b6477a4d9246d093f2f20e2, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1225,6 +1225,13 @@ MonoBehaviour:
   TxtHealth: {fileID: 114259215016756080}
   Min: 0
   Max: 100
+  Clip1: {fileID: 8300000, guid: dc66ccee4557a8147a57035c28949264, type: 3}
+  Clip2: {fileID: 8300000, guid: 4e0fd07591631e64ab2f9dece366001a, type: 3}
+  s_StartMusic: {fileID: 0}
+  s_HalfFood: {fileID: 0}
+  StartMusicSnap: {fileID: 24500006, guid: 896f64d1893e6e04c9d2a51b3c1ff15b, type: 2}
+  HalfFoodSnap: {fileID: 245795998964449226, guid: 896f64d1893e6e04c9d2a51b3c1ff15b,
+    type: 2}
 --- !u!114 &114198753817453330
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1628,6 +1635,13 @@ MonoBehaviour:
   TxtHealth: {fileID: 114971688194314588}
   Min: 0
   Max: 100
+  Clip1: {fileID: 8300000, guid: dc66ccee4557a8147a57035c28949264, type: 3}
+  Clip2: {fileID: 8300000, guid: 4e0fd07591631e64ab2f9dece366001a, type: 3}
+  s_StartMusic: {fileID: 0}
+  s_HalfFood: {fileID: 0}
+  StartMusicSnap: {fileID: 24500006, guid: 896f64d1893e6e04c9d2a51b3c1ff15b, type: 2}
+  HalfFoodSnap: {fileID: 245795998964449226, guid: 896f64d1893e6e04c9d2a51b3c1ff15b,
+    type: 2}
 --- !u!114 &114370919194079300
 MonoBehaviour:
   m_ObjectHideFlags: 1
