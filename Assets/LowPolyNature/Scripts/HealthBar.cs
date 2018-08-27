@@ -21,11 +21,10 @@ public class HealthBar : MonoBehaviour {
     // Audio public
 
     public AudioClip Clip1;
-    public AudioClip Clip2;
-    public AudioSource s_StartMusic;
+    public AudioSource s_FullFood;
     public AudioSource s_HalfFood;
 
-    public AudioMixerSnapshot StartMusicSnap;
+    public AudioMixerSnapshot FullFoodSnap;
     public AudioMixerSnapshot HalfFoodSnap;
     
     public void SetValue(int health)
@@ -65,7 +64,7 @@ public class HealthBar : MonoBehaviour {
 
     }
 
-    private void FixedUpdate()
+    /*private void FixedUpdate()
     {
         if(CurrentValue > 50)
         {
@@ -86,6 +85,6 @@ public class HealthBar : MonoBehaviour {
             print("50");
         }
 
-    }
+    }*/
 
 }
