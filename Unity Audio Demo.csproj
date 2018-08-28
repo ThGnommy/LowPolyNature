@@ -241,6 +241,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\LeavesController.cs" />
     <Compile Include="Assets\LowPolyNature\Main Menu\MainMenu.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\AudioRandomController.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\AudioRandomControllerLPF.cs" />
@@ -352,6 +353,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\UISounds.cs" />
+    <Compile Include="Assets\WoodController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />

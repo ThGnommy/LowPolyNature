@@ -24,12 +24,12 @@ public class PauseMenu : MonoBehaviour {
     public void PauseGame()
     {
         Time.timeScale = 0;
-        AudioListener.pause = true;
+        //AudioListener.pause = true;
     }
 
     public void ResumeGame()
     {
         Time.timeScale = 1;
-        AudioListener.pause = false;
+        //AudioListener.pause = false;
     }
 }

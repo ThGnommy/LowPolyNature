@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using Audio.RandomController;
+using UnityEditor.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -183,7 +184,14 @@ public class PlayerController : MonoBehaviour
         {
             CancelInvoke();
             _animator.SetTrigger("death");
+            StartCoroutine(ReloadScene());
         }
+    }
+
+    IEnumerator ReloadScene()
+    {
+        yield return new WaitForSeconds(2);
+        EditorSceneManager.LoadScene("MainMenu");
     }
 
     public bool IsDead
