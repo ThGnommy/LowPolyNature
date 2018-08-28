@@ -32,5 +32,4 @@ public class MainMenu : MonoBehaviour {
         yield return new WaitUntil(() => Black.color.a == 1);
         SceneManager.LoadScene("Demo");
     }
-
 }
