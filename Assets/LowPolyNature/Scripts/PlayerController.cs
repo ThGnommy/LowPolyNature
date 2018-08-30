@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
     public AudioRandomController JumpSoundController;
     public AudioRandomController LandSoundController;
     public AudioRandomController DeathSoundController;
-    public AudioRandomController AttackSoundController;
+    public AudioRandomController AttackSound;
     public AudioRandomController PickupSoundController;
 
 
@@ -75,6 +75,11 @@ public class PlayerController : MonoBehaviour
         mFoodBar.SetValue(Food);
 
         InvokeRepeating("IncreaseHunger", 0, HungerRate);
+    }
+
+    public void PlayerAttackSound()
+    {
+        AudioRandomController.Trigger(AttackSound);
     }
 
     #region Inventory
