@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23045248935680120}
   - component: {fileID: 65743034050764648}
   - component: {fileID: 114588879040453822}
+  - component: {fileID: 82973697992327878}
   m_Layer: 0
   m_Name: aid_box
   m_TagString: Untagged
@@ -96,6 +97,87 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0038208917, y: 0.0034846987, z: 0.0028511619}
   m_Center: {x: 0.0009219792, y: -2.9103814e-10, z: 0.0014369135}
+--- !u!82 &82973697992327878
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1970989797646066}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 243643400918942612, guid: 896f64d1893e6e04c9d2a51b3c1ff15b,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114588879040453822
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -116,3 +198,4 @@ MonoBehaviour:
   DropRotation: {x: 0, y: 0, z: 0}
   UseItemAfterPickup: 0
   HealthPoints: 25
+  clip: {fileID: 8300000, guid: de182ca91303877438a6c3cb6e5ab271, type: 3}

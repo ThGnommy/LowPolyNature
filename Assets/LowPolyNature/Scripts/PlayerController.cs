@@ -82,6 +82,11 @@ public class PlayerController : MonoBehaviour
         AudioRandomController.Trigger(AttackSound);
     }
 
+    void PlayAxePickupSound()
+    {
+
+    }
+
     #region Inventory
 
     private void Inventory_ItemRemoved(object sender, InventoryEventArgs e)
@@ -121,6 +126,8 @@ public class PlayerController : MonoBehaviour
 
     }
 
+
+
     private int Attack_1_Hash = Animator.StringToHash("Base Layer.Attack_1");
 
     public bool IsAttacking
@@ -152,6 +159,8 @@ public class PlayerController : MonoBehaviour
 
             Invoke("DoDropItem", 0.25f);
         }
+
+
 
     }
 

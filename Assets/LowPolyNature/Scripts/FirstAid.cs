@@ -5,6 +5,12 @@ using UnityEngine;
 public class FirstAid : InventoryItemBase
 {
     public int HealthPoints = 20;
+    public AudioSource audioSource;
+
+    private void Start()
+    {
+       AudioSource audioSource = GetComponent<AudioSource>();
+    }
 
     public override void OnUse()
     {
@@ -13,5 +19,11 @@ public class FirstAid : InventoryItemBase
         GameManager.Instance.Player.Inventory.RemoveItem(this);
 
         Destroy(this.gameObject);
+    }
+
+    public override void OnPickup()
+    {
+        base.OnPickup();
+        audioSource.Play();
     }
 }
