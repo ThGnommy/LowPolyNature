@@ -14,7 +14,7 @@ public class RestartLevel : MonoBehaviour {
         {
             _animator.SetTrigger("death");
 
-            StartCoroutine("Fading");
+            StartCoroutine(Fading());
         }
     }
 

@@ -47,7 +47,6 @@ namespace Audio.RandomController
 
         public static void Trigger(AudioRandomController src)
         {
-            Debug.Log("The Trigger Was Triggered");
             if (src != null)
             {
                 src.PlayRandomSound();

@@ -182,6 +182,8 @@ GameObject:
   - component: {fileID: 114743782183814366}
   - component: {fileID: 195094338865217482}
   - component: {fileID: 54272747306353502}
+  - component: {fileID: 82330131128083146}
+  - component: {fileID: 114331935091025328}
   m_Layer: 0
   m_Name: Sheep
   m_TagString: Untagged
@@ -785,6 +787,87 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0019429455, y: 0.0044055623, z: 0.001144517}
   m_Center: {x: -0.00026367087, y: 0.00081360404, z: 0.00032728573}
+--- !u!82 &82330131128083146
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1442330619866686}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 243619086828306276, guid: 896f64d1893e6e04c9d2a51b3c1ff15b,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 100
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1.1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95144379055148904
 Animator:
   serializedVersion: 3
@@ -822,6 +905,25 @@ MonoBehaviour:
   DropRotation: {x: 0, y: 0, z: 0}
   UseItemAfterPickup: 0
   FoodPoints: 20
+--- !u!114 &114331935091025328
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1442330619866686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8171c31a3daa8046bd20ea33586ebb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - {fileID: 8300000, guid: 6ae4f4127ba352440bf324ca8a2f0640, type: 3}
+  - {fileID: 8300000, guid: 1b93dcc6a8079d04d9337e427e007c4a, type: 3}
+  minPitch: 0.9
+  maxPitch: 1.1
+  minVol: 0.7
+  maxVol: 1
+  retriggerPrevention: 1
 --- !u!114 &114698081657331474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -858,6 +960,8 @@ MonoBehaviour:
   ItemsDeadState:
   - {fileID: 1120798025891160}
   - {fileID: 1253218787766072}
+  hitSound: {fileID: 8300000, guid: 317b3765e760ef44da33c4084070e8ae, type: 3}
+  runSound: {fileID: 114331935091025328}
 --- !u!136 &136834963823365008
 CapsuleCollider:
   m_ObjectHideFlags: 1

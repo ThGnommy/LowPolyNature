@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using Audio.RandomController;
 
 public class Sheep : MonoBehaviour
 {
@@ -17,12 +18,20 @@ public class Sheep : MonoBehaviour
 
     public GameObject[] ItemsDeadState = null;
 
+    public AudioClip hitSound;
+
+    public AudioRandomController runSound;
+
+    AudioSource audioSource;
+
     // Use this for initialization
     void Start()
     {
         mAgent = GetComponent<NavMeshAgent>();
 
         mAnimator = GetComponent<Animator>();
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     private bool IsNavMeshMoving
@@ -47,6 +56,8 @@ public class Sheep : MonoBehaviour
                     mAgent.enabled = false;
                     mAnimator.SetTrigger("die");
                     Destroy(GetComponent<Rigidbody>());
+
+                    audioSource.PlayOneShot(hitSound);
 
                     Invoke("ShowItemsDeadState", 1.2f);
                 }
@@ -91,10 +102,21 @@ public class Sheep : MonoBehaviour
             Vector3 newPos = transform.position + dirToPlayer;
 
             mAgent.SetDestination(newPos);
-
+            StartCoroutine(PlaySheepSound());
         }
 
         mAnimator.SetBool("walk", IsNavMeshMoving);
 
+    }
+
+    IEnumerator PlaySheepSound()
+    {
+        bool isPlayerArmed = Player.GetComponent<PlayerController>().IsArmed;
+
+        while (!mIsDead && isPlayerArmed)
+        {
+            AudioRandomController.Trigger(runSound);
+            yield return new WaitForSeconds(3f);
+        }
     }
 }

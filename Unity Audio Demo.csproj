@@ -241,7 +241,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AudioPosition.cs" />
     <Compile Include="Assets\LeavesController.cs" />
+    <Compile Include="Assets\LowPolyNature\Audio\AudioPosition2.cs" />
     <Compile Include="Assets\LowPolyNature\Main Menu\MainMenu.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\AudioRandomController.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\AudioRandomControllerLPF.cs" />
@@ -319,6 +321,7 @@
     <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+    <Compile Include="Assets\Test\ScatterAudioEvent.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

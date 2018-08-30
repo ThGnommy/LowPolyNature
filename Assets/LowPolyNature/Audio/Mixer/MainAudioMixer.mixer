@@ -43,6 +43,7 @@ AudioMixerController:
     - 2929d52bc63d67d4ea59d23b85754fcd
     - 3b93f333b4b9f324eb4540e65ee39be9
     - bf1c1bd356195b74f998d4eeca033af0
+    - 8337222e345bb6645bc253414613f07b
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 245302546186828096}
@@ -267,11 +268,29 @@ AudioMixerGroupController:
   - {fileID: 243722074423479040}
   - {fileID: 243965467833317800}
   - {fileID: 243643400918942612}
+  - {fileID: 243619086828306276}
   m_Volume: 4bc0efb007a653947bd91ae0cdd45f67
   m_Pitch: 7d00636a8ccde5a4899fe4830aa5ac5f
   m_Effects:
   - {fileID: 244040172499668282}
   m_UserColorIndex: 2
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243619086828306276
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Sheeps
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 8337222e345bb6645bc253414613f07b
+  m_Children: []
+  m_Volume: 19c71644409325146be8aceb0cd018fc
+  m_Pitch: c5590805ce57d9c44ba3bb1e974e25c8
+  m_Effects:
+  - {fileID: 244803701053129788}
+  m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
@@ -620,6 +639,19 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!244 &244803701053129788
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 03c85e19f5d663f4a9a1c15c616d5a01
+  m_EffectName: Attenuation
+  m_MixLevel: 6c6b57f854b850f4abe3b2333dd41661
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &244823732734156916
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -670,6 +702,7 @@ AudioMixerSnapshotController:
   m_FloatValues:
     0ceade812b084aa4d914ac56f76b79a4: 22000
     08853ff2617b9b94eab3e3b704513168: -80
+    0d973de385f978545b2ee18e96647796: -2.8722944
     4d340d647822cee49a45537bd8657519: 2
     e6ae3af42c0c9414386d3dd14aeb70ce: -7.8940816
     7ee8f406502845b43b6a56e8aa479ebd: -0.002441872
