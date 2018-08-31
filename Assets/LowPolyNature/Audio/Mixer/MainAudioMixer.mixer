@@ -13,6 +13,7 @@ AudioMixerController:
   - {fileID: 24500006}
   - {fileID: 245795998964449226}
   - {fileID: 245481358956161888}
+  - {fileID: 245373416901272400}
   m_StartSnapshot: {fileID: 245302546186828096}
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
@@ -804,6 +805,37 @@ AudioMixerSnapshotController:
     34893d4a9c8361541bc07ce1feaa0995: -5.7224774
     372c47da659a1fc49a40b3f97bfffdad: -51.4
     4dbfba0bee807f541945022cabb9dee9: 0
+    2dc9ce4b65e5b204db1896980c675145: 2
+    1ff1b95df2b80a649a4b3a86efb5d930: -7241
+    3fde4d9dab6e66247bfc2d9dee53aae8: -6.5566154
+    756b101e5f98a7349b72e69089587bad: 3.2656894
+    7104b71fefef7384aa1de88a53cd512b: 0
+  m_TransitionOverrides: {}
+--- !u!245 &245373416901272400
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Gameover
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 195d1f84c611e5d42a7b30aacb5030e0
+  m_FloatValues:
+    0ceade812b084aa4d914ac56f76b79a4: 22000
+    08853ff2617b9b94eab3e3b704513168: -80
+    57a62d43fef8b11468cd4ea76f4f15cf: 0
+    0d973de385f978545b2ee18e96647796: -2.8722944
+    4d340d647822cee49a45537bd8657519: 2
+    e6ae3af42c0c9414386d3dd14aeb70ce: -7.8940816
+    7ee8f406502845b43b6a56e8aa479ebd: -0.002441872
+    68f9764655a33574983760ee6bf7ad8e: -5.5757365
+    f5c464c6d2a15264bb32e424749155e8: -3.5922942
+    e1dde987747628245ad158e382440642: -80
+    de1d9209af624ff4c943cd1cc7148b7b: 0.27000782
+    bbe7c449cf5bbbb47bb3ab47cc283dfd: 1
+    9aac4b1ab4fdbf74d95be42e9a38ae64: 1.95
+    34893d4a9c8361541bc07ce1feaa0995: -5.7224774
+    372c47da659a1fc49a40b3f97bfffdad: -51.4
+    4dbfba0bee807f541945022cabb9dee9: -80
     2dc9ce4b65e5b204db1896980c675145: 2
     1ff1b95df2b80a649a4b3a86efb5d930: -7241
     3fde4d9dab6e66247bfc2d9dee53aae8: -6.5566154

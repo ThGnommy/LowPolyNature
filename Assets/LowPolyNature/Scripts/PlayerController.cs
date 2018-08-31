@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using Audio.RandomController;
-using UnityEditor.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class PlayerController : MonoBehaviour
 {
@@ -43,6 +45,14 @@ public class PlayerController : MonoBehaviour
 
     public float JumpSpeed = 7.0f;
 
+    public AudioSource GameOverSound;
+
+    public Image Black;
+
+    public Animator _fadeAnim;
+
+    public AudioMixerSnapshot masterSnap;
+
     #endregion
 
 
@@ -80,11 +90,6 @@ public class PlayerController : MonoBehaviour
     public void PlayerAttackSound()
     {
         AudioRandomController.Trigger(AttackSound);
-    }
-
-    void PlayAxePickupSound()
-    {
-
     }
 
     #region Inventory
@@ -197,16 +202,9 @@ public class PlayerController : MonoBehaviour
         if (IsDead)
         {
             CancelInvoke();
-            _animator.SetTrigger("death");
-            StartCoroutine(ReloadScene());
         }
     }
 
-    IEnumerator ReloadScene()
-    {
-        yield return new WaitForSeconds(2);
-        EditorSceneManager.LoadScene("MainMenu");
-    }
 
     public bool IsDead
     {
@@ -261,8 +259,23 @@ public class PlayerController : MonoBehaviour
 
         if (IsDead)
         {
+            GameOverSound.Play();
             _animator.SetTrigger("death");
+            masterSnap.TransitionTo(2f);
+
+            StartCoroutine(Fading());
         }
+
+    }
+
+
+
+    IEnumerator Fading()
+    {
+        _fadeAnim.SetBool("Fade", true);
+        yield return new WaitUntil(() => Black.color.a == 1);
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene("Demo");
 
     }
 

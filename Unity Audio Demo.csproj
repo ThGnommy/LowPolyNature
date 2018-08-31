@@ -242,6 +242,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AudioPosition.cs" />
+    <Compile Include="Assets\GameOver.cs" />
     <Compile Include="Assets\LeavesController.cs" />
     <Compile Include="Assets\LowPolyNature\Audio\AudioPosition2.cs" />
     <Compile Include="Assets\LowPolyNature\Main Menu\MainMenu.cs" />
