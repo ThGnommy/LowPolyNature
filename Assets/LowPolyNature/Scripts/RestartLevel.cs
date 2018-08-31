@@ -12,6 +12,7 @@ public class RestartLevel : MonoBehaviour {
     bool dead;
     public AudioSource audioSource;
     public AudioMixerSnapshot masterSnap;
+    public GameObject GameOverMenu;
 
     private void Start()
     {
@@ -40,6 +41,8 @@ public class RestartLevel : MonoBehaviour {
     {
         anim.SetBool("Fade", true);
         yield return new WaitUntil(() => Black.color.a == 1);
+        GameOverMenu.SetActive(true);
+        Time.timeScale = 0;
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene("Demo");
     }

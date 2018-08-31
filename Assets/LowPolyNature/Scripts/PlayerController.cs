@@ -202,6 +202,10 @@ public class PlayerController : MonoBehaviour
         if (IsDead)
         {
             CancelInvoke();
+            GameOverSound.Play();
+            _animator.SetTrigger("death");
+            masterSnap.TransitionTo(2.5f);
+            StartCoroutine(Fading());
         }
     }
 
@@ -261,14 +265,11 @@ public class PlayerController : MonoBehaviour
         {
             GameOverSound.Play();
             _animator.SetTrigger("death");
-            masterSnap.TransitionTo(2f);
-
+            masterSnap.TransitionTo(2.5f);
             StartCoroutine(Fading());
         }
 
     }
-
-
 
     IEnumerator Fading()
     {

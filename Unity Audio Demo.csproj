@@ -241,11 +241,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AudioPosition.cs" />
-    <Compile Include="Assets\GameOver.cs" />
-    <Compile Include="Assets\LeavesController.cs" />
     <Compile Include="Assets\LowPolyNature\Audio\AudioPosition2.cs" />
     <Compile Include="Assets\LowPolyNature\Main Menu\MainMenu.cs" />
+    <Compile Include="Assets\LowPolyNature\Scripts\AudioPosition.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\AudioRandomController.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\AudioRandomControllerLPF.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\AudioSettings.cs" />
@@ -257,6 +255,7 @@
     <Compile Include="Assets\LowPolyNature\Scripts\Food.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\FootstepsController.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\GameManager.cs" />
+    <Compile Include="Assets\LowPolyNature\Scripts\GameOver.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\Gem.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\HealthBar.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\HUD.cs" />
@@ -267,16 +266,19 @@
     <Compile Include="Assets\LowPolyNature\Scripts\ItemClickHandler.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\ItemDragHandler.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\ItemDropHandler.cs" />
+    <Compile Include="Assets\LowPolyNature\Scripts\LeavesController.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\LowPassRandomizer.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\MusicController.cs" />
+    <Compile Include="Assets\LowPolyNature\Scripts\MusicOff.cs" />
+    <Compile Include="Assets\LowPolyNature\Scripts\MusicOn.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\PlayerController.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\PlayerFollow.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\RestartLevel.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\Sheep.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\SliderVolume.cs" />
-    <Compile Include="Assets\MusicOff.cs" />
-    <Compile Include="Assets\MusicOn.cs" />
+    <Compile Include="Assets\LowPolyNature\Scripts\UISounds.cs" />
+    <Compile Include="Assets\LowPolyNature\Scripts\WoodController.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -356,8 +358,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
-    <Compile Include="Assets\UISounds.cs" />
-    <Compile Include="Assets\WoodController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />

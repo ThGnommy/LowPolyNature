@@ -9,6 +9,10 @@ public class FootstepsController : MonoBehaviour {
     public AudioRandomControllerLPF FR_Grass;
     public AudioRandomControllerLPF FL_Sand;
     public AudioRandomControllerLPF FR_Sand;
+    public AudioRandomControllerLPF LandSand;
+    public AudioRandomControllerLPF LandGrass;
+
+
     BoxCollider boxCollider;
     RaycastHit hit;
     public float maxDistance = 20;
@@ -57,6 +61,25 @@ public class FootstepsController : MonoBehaviour {
             }
         }
 
+    }
+
+    void PlayerLand()
+    {
+        if(Physics.Raycast(transform.position, Vector3.down, 1f))
+        {
+            if(hit.transform.GetComponent<Collider>().CompareTag("Sand"))
+            {
+                AudioRandomControllerLPF.Trigger(LandSand);
+                print("LAND SAND");
+            }
+
+            if (hit.transform.GetComponent<Collider>().CompareTag("Grass"))
+            {
+                AudioRandomControllerLPF.Trigger(LandGrass);
+                print("LAND GRASS");
+            }
+
+        }
     }
 
 }
