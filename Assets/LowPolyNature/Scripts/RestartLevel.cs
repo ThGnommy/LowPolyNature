@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 using UnityEngine.UI;
 using UnityEngine.Audio;
 
@@ -42,8 +42,7 @@ public class RestartLevel : MonoBehaviour {
         anim.SetBool("Fade", true);
         yield return new WaitUntil(() => Black.color.a == 1);
         GameOverMenu.SetActive(true);
-        Time.timeScale = 0;
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene("Demo");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Demo");
     }
 }

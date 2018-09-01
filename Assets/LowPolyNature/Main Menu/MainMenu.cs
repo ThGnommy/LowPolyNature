@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour {
@@ -30,6 +29,6 @@ public class MainMenu : MonoBehaviour {
     {
         anim.SetBool("Fade", true);
         yield return new WaitUntil(() => Black.color.a == 1);
-        SceneManager.LoadScene("Demo");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Demo");
     }
 }

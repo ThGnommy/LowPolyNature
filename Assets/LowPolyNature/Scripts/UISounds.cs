@@ -22,7 +22,6 @@ public class UISounds : MonoBehaviour {
 
     public void PlaySelect()
     {
-        audioSource = GetComponent<AudioSource>();
         audioSource.PlayOneShot(ui_Select);
     }
 
@@ -39,7 +38,6 @@ public class UISounds : MonoBehaviour {
     public void PlayUndo()
     {
         audioSource.PlayOneShot(ui_Undo);
-
     }
 
     IEnumerator DisableAudioSource()

@@ -202,9 +202,7 @@ public class PlayerController : MonoBehaviour
         if (IsDead)
         {
             CancelInvoke();
-            GameOverSound.Play();
             _animator.SetTrigger("death");
-            masterSnap.TransitionTo(2.5f);
             StartCoroutine(Fading());
         }
     }
@@ -263,21 +261,29 @@ public class PlayerController : MonoBehaviour
 
         if (IsDead)
         {
-            GameOverSound.Play();
+
             _animator.SetTrigger("death");
-            masterSnap.TransitionTo(2.5f);
             StartCoroutine(Fading());
         }
 
     }
 
+    public Animator anim;
+    public GameObject GameOverMenu;
+
     IEnumerator Fading()
     {
+        if(!GameOverSound.isPlaying)
+        {
+            GameOverSound.Play();
+            print("game over sound play");
+        }
         _fadeAnim.SetBool("Fade", true);
         yield return new WaitUntil(() => Black.color.a == 1);
-        yield return new WaitForSeconds(1);
-        SceneManager.LoadScene("Demo");
-
+        masterSnap.TransitionTo(2.5f);
+        GameOverMenu.SetActive(true);
+        //yield return new WaitForSeconds(1);
+        //UnityEngine.SceneManagement.SceneManager.LoadScene("Demo");
     }
 
     #endregion
@@ -293,11 +299,14 @@ public class PlayerController : MonoBehaviour
                 DropCurrentItem();
             }
         }
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
+
 
         if (!IsDead)
         {
