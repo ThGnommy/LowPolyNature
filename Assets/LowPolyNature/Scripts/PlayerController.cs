@@ -261,7 +261,6 @@ public class PlayerController : MonoBehaviour
 
         if (IsDead)
         {
-
             _animator.SetTrigger("death");
             StartCoroutine(Fading());
         }
