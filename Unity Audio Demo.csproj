@@ -248,6 +248,7 @@
     <Compile Include="Assets\LowPolyNature\Scripts\AudioRandomControllerLPF.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\AudioSettings.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\Axe.cs" />
+    <Compile Include="Assets\LowPolyNature\Scripts\BirdsSound.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\CameraDistance.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\Crate.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\DamageSource.cs" />
