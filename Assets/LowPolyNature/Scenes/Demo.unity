@@ -3867,6 +3867,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114831351698402424, guid: 653bb973a9e549f4d8e1282c47a253f2,
+        type: 2}
+      propertyPath: onDamage
+      value: 
+      objectReference: {fileID: 245197313775293526, guid: 896f64d1893e6e04c9d2a51b3c1ff15b,
+        type: 2}
+    - target: {fileID: 114831351698402424, guid: 653bb973a9e549f4d8e1282c47a253f2,
+        type: 2}
+      propertyPath: safe
+      value: 
+      objectReference: {fileID: 245940228723228036, guid: 896f64d1893e6e04c9d2a51b3c1ff15b,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 653bb973a9e549f4d8e1282c47a253f2, type: 2}
   m_IsPrefabParent: 0
@@ -7567,7 +7579,8 @@ AudioSource:
   m_GameObject: {fileID: 740917436}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243960494605064216, guid: 896f64d1893e6e04c9d2a51b3c1ff15b,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 3b005832c3601ca4087cce4f51efb939, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -15747,6 +15760,18 @@ Prefab:
       propertyPath: m_Name
       value: Lava_plane (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114831351698402424, guid: 653bb973a9e549f4d8e1282c47a253f2,
+        type: 2}
+      propertyPath: onDamage
+      value: 
+      objectReference: {fileID: 245197313775293526, guid: 896f64d1893e6e04c9d2a51b3c1ff15b,
+        type: 2}
+    - target: {fileID: 114831351698402424, guid: 653bb973a9e549f4d8e1282c47a253f2,
+        type: 2}
+      propertyPath: safe
+      value: 
+      objectReference: {fileID: 245940228723228036, guid: 896f64d1893e6e04c9d2a51b3c1ff15b,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 653bb973a9e549f4d8e1282c47a253f2, type: 2}
   m_IsPrefabParent: 0
@@ -16707,7 +16732,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: e758ae7f40cac1141bb501e1a4ec2a03, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -16763,7 +16788,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -17563,6 +17588,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 126
       objectReference: {fileID: 0}
+    - target: {fileID: 114783750157478970, guid: 2fe7a9ef6e9f71845a2043158d302b34,
+        type: 2}
+      propertyPath: onDamage
+      value: 
+      objectReference: {fileID: 245197313775293526, guid: 896f64d1893e6e04c9d2a51b3c1ff15b,
+        type: 2}
+    - target: {fileID: 114783750157478970, guid: 2fe7a9ef6e9f71845a2043158d302b34,
+        type: 2}
+      propertyPath: safe
+      value: 
+      objectReference: {fileID: 245940228723228036, guid: 896f64d1893e6e04c9d2a51b3c1ff15b,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2fe7a9ef6e9f71845a2043158d302b34, type: 2}
   m_IsPrefabParent: 0
@@ -19713,13 +19750,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1995003948}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: 0.36536255, z: -0, w: 0.93086535}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1799909206}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 42.86, z: 0}
 --- !u!82 &1995003950
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19728,7 +19765,8 @@ AudioSource:
   m_GameObject: {fileID: 1995003948}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243960494605064216, guid: 896f64d1893e6e04c9d2a51b3c1ff15b,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: f7838da83ff937e4d9981e32ae8dd582, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1

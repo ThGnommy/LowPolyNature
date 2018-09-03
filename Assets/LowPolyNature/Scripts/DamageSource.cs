@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class DamageSource : MonoBehaviour {
 
@@ -17,6 +18,11 @@ public class DamageSource : MonoBehaviour {
     public int DamageAmount = 1;
 
     public bool Repeating = true;
+
+    public AudioMixerSnapshot onDamage;
+
+    public AudioMixerSnapshot safe;
+
 
     #endregion
 
@@ -39,6 +45,8 @@ public class DamageSource : MonoBehaviour {
                 player.TakeDamage(DamageAmount);
             }
         }
+
+        onDamage.TransitionTo(.5f);
     }
 
     IEnumerator TakeDamage(PlayerController player, float repeatRate)
@@ -61,6 +69,8 @@ public class DamageSource : MonoBehaviour {
         if (player != null)
         {
             _isCausingDamage = false;
+
+            safe.TransitionTo(.5f);
         }
     }
 }
